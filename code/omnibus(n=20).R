@@ -1,0 +1,25 @@
+
+layout(matrix(c(1,2), nrow=1, byrow=TRUE))
+par(mai=c(1,0.8,0.4,0.2))
+par(oma=c(0,0,1,0))
+#omnibus Random
+mydata1 <- read.csv("random_R123_GEEMiHC20.csv")
+x <- c(2, 4, 6, 8, 10, 12)
+plot(x, mydata1$aGEEMiHC, type = "b", col = "red1", pch = 20, lty = 1, lwd = 1, cex = 1, ylim = c(80, 100), xlab = "Proportion of OTUs selected (%)", ylab = "Power (%)", main = "Random (n=20)", font.axis = 2, font.lab = 2)
+abline(h = c(80, 85, 90, 95, 100), v = c(2, 4, 6, 8, 10, 12), lty = 2, lwd = 1, col = "grey90")
+lines(x, mydata1$GEEMiHC_IN, type = "b", col = "green1", pch = 20, lty = 1, lwd = 1, cex = 1)
+lines(x, mydata1$GEEMiHC_EX, type = "b", col = "sky blue", pch = 20, lty = 1, lwd = 1, cex = 1)
+lines(x, mydata1$GEEMiHC_AR, type = "b", col = "orange", pch = 20, lty = 1, lwd = 1, cex = 1)
+lines(x, mydata1$aGEEMiHC, type = "b", col = "red1", pch = 20, lty = 1, lwd = 1, cex = 1)
+legend(8.5, 85, legend=c("aGEEMiHC", "GEEMiHC(AR)", "GEEMiHC(EX)", "GEEMiHC(IN)"), col=c("red1", "orange", "sky blue", "green1"), cex = 0.7, lty = 1, lwd = 1, pch = 20, bty="n")
+
+#omnibus phylogeny
+mydata2 <- read.csv("phylogeny_R123_GEEMiHC20.csv")
+x <- c(2, 4, 6, 8, 10, 12)
+plot(x, mydata2$aGEEMiHC, type = "b", col = "red1", pch = 20, lty = 1, lwd = 1, cex = 1, ylim = c(80, 100), xlab = "Proportion of OTUs selected (%)", ylab = "Power (%)", main = "Phylogeny (n=20)", font.axis = 2, font.lab = 2)
+abline(h = c(80, 85, 90, 95, 100), v = c(2, 4, 6, 8, 10, 12), lty = 2, lwd = 1, col = "grey90")
+lines(x, mydata2$GEEMiHC_IN, type = "b", col = "green1", pch = 20, lty = 1, lwd = 1, cex = 1)
+lines(x, mydata2$GEEMiHC_EX, type = "b", col = "sky blue", pch = 20, lty = 1, lwd = 1, cex = 1)
+lines(x, mydata2$GEEMiHC_AR, type = "b", col = "orange", pch = 20, lty = 1, lwd = 1, cex = 1)
+lines(x, mydata2$aGEEMiHC, type = "b", col = "red1", pch = 20, lty = 1, lwd = 1, cex = 1)
+legend(8.5, 85, legend=c("aGEEMiHC", "GEEMiHC(AR)", "GEEMiHC(EX)", "GEEMiHC(IN)"), col=c("red1", "orange", "sky blue", "green1"), cex = 0.7, lty = 1, lwd = 1, pch = 20, bty="n")
