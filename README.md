@@ -2,6 +2,9 @@
 ## Introduction
 The section mainly introduces some data and code involved in the paper.
 
+## Simulation data
+This section is mainly about all the simulation data we used.
+
 ## Other source
 ### Main data
 The data for power Figure: random\_R123\_GEEMiHC20.csv and phylogeny\_R123\_GEEMiHC20.csv
@@ -19,7 +22,3 @@ Power Figure: omnibus(n=20).R
 Accuracy Figure: Random2and6(n=20).R
 
 3D Figure: longitudinal plot.R
-
-## Simulation data
-This section is mainly about all the simulation data we used.
-
