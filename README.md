@@ -22,3 +22,6 @@ Power Figure: omnibus(n=20).R
 Accuracy Figure: Random2and6(n=20).R
 
 3D Figure: longitudinal plot.R
+
+## References
+* Sun H, et al. Detecting sparse microbial association signals adaptively from longitudinal microbiome data based on generalized estimating equations. _Briefings in Bioinformatics_, page bbac149, 2022.
